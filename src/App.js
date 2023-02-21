@@ -3,7 +3,7 @@ import { increment, decrement } from './redux/counter';
 import './App.css';
 
 function App() {
-  const count = useSelector((state) => state.counter)
+  const count = useSelector((state) => state.counter.value)
   const dispatch = useDispatch()
   return (
     <div className="App">
